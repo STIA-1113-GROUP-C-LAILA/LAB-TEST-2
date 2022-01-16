@@ -1,0 +1,47 @@
+package testtwo;
+import java.util.Scanner;
+public class STUDENTMARK {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+		int mark1, mark2, mark3;
+		int total;
+		double average;
+		
+		System.out.print("Enter the mark for student A :");
+		mark1 = scan.nextInt();
+		
+		while ((mark1 < 0) || (mark1 > 100)) {
+			System.out.println("Invalid input.");
+			System.out.print("Please enter the mark again : ");
+			mark1 = scan.nextInt();
+		}
+		
+		System.out.print("Enter the mark for student B :");
+		mark2 = scan.nextInt();
+		while ((mark2 < 0) || (mark2 > 100)) {
+			System.out.println("Invalid input.");
+			System.out.print("Please enter the mark again : ");
+			mark2 = scan.nextInt();
+		}
+		
+		System.out.print("Enter the mark for student C : ");
+		mark3 = scan.nextInt();
+		while ((mark3 < 0) || (mark3 > 100)) {
+			System.out.println("Invalid input.");
+			System.out.print("Please enter the mark again : ");
+			mark3 = scan.nextInt();
+		}
+		
+		total = mark1 + mark2 + mark3;
+		average = (double)total / 3;
+		
+		System.out.print("The average of 3 students is : ");
+		System.out.printf("%.2f", average);
+		
+		
+
+	}
+
+}
