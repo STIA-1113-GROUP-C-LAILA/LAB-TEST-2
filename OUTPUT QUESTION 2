@@ -1,0 +1,8 @@
+Enter the mark for student A :56
+Enter the mark for student B :101
+Invalid input.
+Please enter the mark again : -1
+Invalid input.
+Please enter the mark again : 99
+Enter the mark for student C : 45
+The average of 3 students is : 66.67
